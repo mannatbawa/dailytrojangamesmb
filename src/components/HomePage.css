@@ -1,0 +1,54 @@
+/* Import Abhaya Libre font - add this at the top of the file */
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&display=swap");
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px;
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+  font: "Inter", sans-serif;
+  z-index: 0;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.home-page h1 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: -1px;
+}
+
+.home-page h2 {
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: visible;
+  /* align-items: center; */
+  /* gap: 20px; */
+  /* padding: 20px; */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .home-page h1 {
+    font-size: 2rem;
+  }
+  .home-page h2 {
+    font-size: 1rem;
+  }
+}

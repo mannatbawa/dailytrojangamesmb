@@ -1,0 +1,62 @@
+.game-start-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  font-family: "Inter", serif;
+}
+
+.game-start-page h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.game-start-page p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.game-logo {
+  width: 200px;
+  height: 200px;
+}
+
+.game-date {
+  font-family: "Abhaya Libre", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.game-description {
+  width: 60%; /* Adjust width as needed */
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.game-start-page button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.start-button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid transparent;
+}
+
+.start-button:hover {
+  border: 1px solid black;
+}

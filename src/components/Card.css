@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+
+.game-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  position: relative;
+}
+
+.game-card h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+}
+.game-card:hover {
+  outline: 1px solid #000;
+}
+
+.card-logo {
+  height: 100px;
+  width: auto;
+  align-self: center;
+  margin-top: 30px;
+}
