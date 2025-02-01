@@ -38,9 +38,15 @@ const getLastFridayRange = () => {
   const today = new Date();
   const dayOfWeek = today.getDay();
   const lastFriday = new Date(today);
-  lastFriday.setDate(today.getDate() - (((dayOfWeek + 1) % 7) + 1));
+
+  if (dayOfWeek !== 5) {
+    const daysSinceLastFriday = ((dayOfWeek + 1) % 7) + 1;
+    lastFriday.setDate(today.getDate() - daysSinceLastFriday);
+  }
+
   const previousFriday = new Date(lastFriday);
-  previousFriday.setDate(lastFriday.getDate() - 6);
+  previousFriday.setDate(lastFriday.getDate() - 7);
+
   return `${formatDate(previousFriday)} - ${formatDate(lastFriday)}`;
 };
 

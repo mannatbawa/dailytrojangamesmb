@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Intro from "./components/Intro";
 import HomePage from "./components/HomePage";
 import GameStart from "./components/GameStart";
-import WeeklyQuiz from "./components/weeklyquiz";
+// import WeeklyQuiz from "./components/weeklyquiz";
 // import WeeklyQuiz from "./components/WeeklyQuiz";
 
 function App() {
@@ -16,14 +16,7 @@ function App() {
         <Route path="/quiz" element={<GameStart game="Quiz" />} />
         <Route path="/wordle/play" element={<div>Wordle Game</div>} />
         <Route path="/connections/play" element={<div>Connections Game</div>} />
-        <Route
-          path="/quiz/play"
-          element={
-            <div>
-              <WeeklyQuiz />
-            </div>
-          }
-        />
+        <Route path="/quiz/play" element={<div>{/* <WeeklyQuiz /> */}</div>} />
       </Routes>
     </BrowserRouter>
   );
